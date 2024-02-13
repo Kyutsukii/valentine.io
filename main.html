@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="valentines">
+            <div class="envelope"></div>
+            <div class="paper hidden">
+                <h1>Selamat Hari Valentine, sayang! Hari ini gua akan mengucapkan betapa berterima kasihnya gua karena lu telah ada dalam hidup gua. Seperti biasa, lu adalah sumber kebahagiaan dan juga semangat bagi gua, walau kita sudah jarang ketemu, tapi gua masih cinta sama lu kok hehe.<br> Bersama lu, gua merasa lengkap. Terima kasih karna sudah memberikan dukungan, dan momen-momen tak terlupakan. Gua bersyukur atas semua kenangan indah yang telah kita lalui bersama, dan gua gak sabar untuk membuat lebih banyak momen bersama di lain hari. So, Happy Valentine Pril.  I Love you more than words can define. btw pp nya ganti ke Summer lagi pls. Lalu maaf kalau web nya boring, karna gua coding dari awal dan ini memakan waktu 4 jam bejir &#128128;</h1>
+   
+                <div class="button-wrapper hidden">
+                    <a href="https://www.youtube.com/watch?v=Fo8PE8GaUHA" class="button">Special Video For You</a>
+                </div>
+            </div>
+            <div class="front"></div>
+            <div class="card">
+                <div class="text">Happy<br>Valentine's<br>Day!</div>
+                <div class="heart"></div>
+            </div>
+        </div>
+        <div class="hearts">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            <div class="four"></div>
+            <div class="five"></div>
+        </div>
+    </div>
+    <div class="shadow"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.card').addEventListener('click', function() {
+                // Menambahkan kelas 'hidden' ke kartu
+                this.classList.add('hidden');
+                // Menghilangkan kelas 'hidden' dari kertas untuk menampilkannya
+                document.querySelector('.paper').classList.remove('hidden');
+                // Menghilangkan kelas 'hidden' dari tombol untuk menampilkannya
+                document.querySelector('.button-wrapper').classList.remove('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
