@@ -282,33 +282,3 @@ body {
     background-color: #f8ad9d;
 }
 
-@media only screen and (max-width: 768px) {
-    .container {
-        width: 90%; /* Mengurangi lebar container */
-    }
-
-    .valentines {
-        font-size: 14px; /* Mengurangi ukuran font */
-    }
-
-    .card {
-        width: 200px; /* Mengurangi lebar card */
-    }
-
-    .text {
-        font-size: 16px; /* Mengurangi ukuran font pada teks */
-    }
-
-    /* Mengatur tata letak elemen hearts untuk perangkat seluler */
-    .hearts {
-        position: absolute;
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .hearts div {
-        display: inline-block;
-        margin: 0 5px;
-    }
-}
